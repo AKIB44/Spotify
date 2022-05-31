@@ -1,0 +1,105 @@
+<div class="container-fluid">
+    <div class="row top">
+        <div class="col-2 left">
+
+            <div class="left-options">
+                <mat-icon>
+                    more_horiz
+                </mat-icon>
+            </div>
+            <div class="left-options">
+                <mat-icon>
+                    home 
+                </mat-icon> <button mat-button [routerLink]="['/index2']">
+                    Home
+                </button>
+                
+            </div>
+            <div class="left-options">
+                <mat-icon>
+                    search
+                </mat-icon> <span>Search</span>
+            </div>
+            <div class="left-options">
+                <mat-icon>
+                    video_library
+                </mat-icon><span>Your Library</span>
+            </div>
+            <p class="mt-4">PLAYLISTS</p>
+            <div class="left-options">
+                <mat-icon>
+                    add_box
+                </mat-icon> <span>Create Playlist</span>
+            </div>
+            <div class="left-options">
+                <mat-icon>
+                    favorite
+                </mat-icon> <span>Liked Songs</span>
+            </div>
+            <hr>
+
+        </div>
+        <div class="col-7 mid">
+            <div class="mid-top">
+                <div class="button-arrow">
+                    <button mat-mini-fab>
+                        <mat-icon> chevron_left</mat-icon>
+                    </button>
+                    <button mat-mini-fab>
+                        <mat-icon>chevron_right</mat-icon>
+                    </button>
+
+                </div>
+                <div class="btn-upgrade">
+                    <button mat-flat-button class="u-btn">
+                        UPGRADE
+                    </button>
+                </div>
+            </div>
+            <div>
+                <router-outlet></router-outlet>
+            </div>
+        </div>
+        <div class="col-3 right">
+            <h2>
+                Friends activity
+            </h2>
+
+            <h3>
+                Connect with facebook to see what your friends are playing.
+            </h3>
+
+            <div class="btn">
+                <button mat-flat-button class="facebook-btn">
+                    <img src="assets/img/fb2.webp" alt="">
+                    CONTINUE WITH FACEBOOK
+                </button>
+            </div>
+
+           
+        </div>
+    </div>
+    <div class="row bottom">
+        <div class="col-5">
+            <div class="d-flex align-items-center gap">
+                <div>
+                    <img src="assets/img/song5.png" alt="">
+                </div>
+                <div>
+                    <p class="p1">
+                        Taylor Swift Wildest Dreams
+                    </p>
+                    <p class="p2">
+                        Original Audio
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-7 aud">
+            <audio controls>
+                <source src="assets/audio/wild.mp3" type="audio/mpeg"> 
+            </audio>
+        </div>
+    </div>
+</div>
